@@ -1,0 +1,51 @@
+name: Bug
+about: Report a reproducible defect in repository behavior
+title: "bug: "
+labels: []
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Observed behavior
+      description: What happened? Do not include secrets or unnecessary personal/production data.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Minimal safe steps/environment needed to reproduce. Use synthetic data.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: User/security/data/operations impact and frequency.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / version
+      description: Relevant release/commit/service/environment. Do not paste credentials or sensitive logs.
+  - type: textarea
+    id: security
+    attributes:
+      label: Security / privacy note
+      description: If this could be a vulnerability or expose protected data, do not post exploit/secrets publicly; use the repository's security reporting process.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: "- [ ] Root cause addressed\n- [ ] Regression test added where practical\n- [ ] Related docs/runbooks/contracts updated if affected"
+    validations:
+      required: true
