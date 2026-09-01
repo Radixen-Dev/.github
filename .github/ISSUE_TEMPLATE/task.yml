@@ -1,0 +1,72 @@
+name: Task / feature
+about: Planned implementation, architecture, operations, or documentation work
+title: ""
+labels: []
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What result should exist when this issue is complete?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why is this needed? Link accepted decisions/research/contracts where applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Concrete work included. Keep unknown implementation detail out until research resolves it.
+    validations:
+      required: true
+  - type: textarea
+    id: non_goals
+    attributes:
+      label: Non-goals
+      description: What is deliberately not part of this issue?
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Link blocking issues, ADRs/RFCs, contracts, or external prerequisites.
+  - type: textarea
+    id: security
+    attributes:
+      label: Security / privacy / compliance
+      description: Applicable risks, personal-data changes, authorization/audit needs, or N/A after consideration.
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Data / migration / retention
+      description: Schema, compatibility, lifecycle, migration or N/A.
+    validations:
+      required: true
+  - type: textarea
+    id: operations
+    attributes:
+      label: Operations / observability / rollout
+      description: Deployment, telemetry, rollback/recovery, runbooks, capacity or N/A.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Verifiable conditions for completion.
+      placeholder: "- [ ] ..."
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation plan
+      description: Tests, benchmarks, manual verification, security checks, or other evidence expected.
+    validations:
+      required: true
