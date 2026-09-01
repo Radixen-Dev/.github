@@ -1,0 +1,53 @@
+name: Research spike
+about: Resolve a material unknown before implementation depends on an assumption
+title: "research: "
+labels: []
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: State the decision/unknown this spike must resolve.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this matters
+      description: What implementation, security, cost, product, or compliance decision is blocked?
+    validations:
+      required: true
+  - type: textarea
+    id: known
+    attributes:
+      label: Known constraints / assumptions
+      description: Separate source-supported facts from assumptions.
+  - type: textarea
+    id: options
+    attributes:
+      label: Options to evaluate
+      description: Candidate approaches/providers/standards/models. Do not pre-select the winner.
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Evaluation criteria
+      description: Include relevant correctness, performance, security, privacy/compliance, cost, operational complexity, portability/lock-in, tooling, and compatibility criteria.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence required
+      description: Primary sources, benchmarks, simulations, prototypes, or measurements required. Record research date/software/provider versions for mutable facts.
+    validations:
+      required: true
+  - type: textarea
+    id: completion
+    attributes:
+      label: Completion criteria
+      description: A spike is not done merely because time was spent. State the durable output/ADR/RFC/downstream updates required.
+      placeholder: "- [ ] Evidence/research document committed\n- [ ] Recommendation and rejected alternatives documented\n- [ ] ADR/RFC created/updated if consequential\n- [ ] Blocking implementation issues updated"
+    validations:
+      required: true
