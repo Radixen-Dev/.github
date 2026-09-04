@@ -1,0 +1,94 @@
+name: Quarterly compliance & architecture review
+about: Run the recurring lightweight revalidation checklist (guildrate-engineering#22)
+title: "quarterly review: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Work through `docs/governance/quarterly-review-checklist.md` in `Radixen-Dev/guildrate-engineering` (owner: Project Lead). Each item below links to an authoritative source in that checklist — open it and check current reality against it; do not re-derive facts already captured there. If an item found nothing material, write "No material change" plus what was actually checked. If something changed, open a concrete follow-up issue/ADR/doc PR and link it here rather than describing the change only in this issue's prose.
+  - type: textarea
+    id: data
+    attributes:
+      label: "1. New personal/protected data fields or purposes since last review"
+    validations:
+      required: true
+  - type: textarea
+    id: vendors
+    attributes:
+      label: "2. New vendors/subprocessors/providers"
+    validations:
+      required: true
+  - type: textarea
+    id: retention
+    attributes:
+      label: "3. Changed retention policies/enforcement"
+    validations:
+      required: true
+  - type: textarea
+    id: jurisdictions
+    attributes:
+      label: "4. New deliberately targeted jurisdictions/business models"
+    validations:
+      required: true
+  - type: textarea
+    id: law
+    attributes:
+      label: "5. Material privacy/UGC/security law/threshold changes"
+    validations:
+      required: true
+  - type: textarea
+    id: fivem_gmod_terms
+    attributes:
+      label: "6. Material provider/API/source terms changes affecting FiveM/GMod"
+    validations:
+      required: true
+  - type: textarea
+    id: incidents
+    attributes:
+      label: "7. Security incidents/privacy requests and lessons"
+    validations:
+      required: true
+  - type: textarea
+    id: audit_coverage
+    attributes:
+      label: "8. Audit event coverage for new mutations/sensitive reads"
+    validations:
+      required: true
+  - type: textarea
+    id: privileged_access
+    attributes:
+      label: "9. Privileged access/roles still appropriate"
+    validations:
+      required: true
+  - type: textarea
+    id: policy_truth
+    attributes:
+      label: "10. Public policies remain truthful to implementation"
+    validations:
+      required: true
+  - type: textarea
+    id: runtime_lifecycle
+    attributes:
+      label: "11. Supported runtime/OS/security standard lifecycle"
+    validations:
+      required: true
+  - type: textarea
+    id: backup_restore
+    attributes:
+      label: "12. Backup/restore/runbook validation current"
+    validations:
+      required: true
+  - type: textarea
+    id: unresolved_risk
+    attributes:
+      label: "13. Unresolved High/Critical compliance/security risks"
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary / next due date
+      description: "Short versioned report, e.g. 'Reviewed <quarter>; no material changes' plus areas actually revalidated. Append a row to docs/governance/quarterly-review-checklist.md's Review log with the outcome and next due date before closing this issue."
+    validations:
+      required: true
